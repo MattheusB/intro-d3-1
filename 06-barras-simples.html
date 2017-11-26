@@ -52,11 +52,11 @@
       svg.selectAll('rect')
           .data(dados)
           .enter()
-            .append('rect')
+              .append('rect')
               .attr('x', 0) // A função com dois parâmetros pode entrar
-              .attr('y', (dado, indice) => indice * (altura/dados.length)) // e aqui
-              .attr('width', (dado) => (dado * largura)/100)
-              .attr('height', (dado) => ((altura/dados.length)-2);
+              .attr('y', function(dado, indice) {indice * (altura/dados.length)}) // e aqui
+              .attr('width', function(dado, indice) { (dado * largura)/100})
+              .attr('height', ((altura/dados.length)-2));
 
       /* Mais dicas :
        * - As barras ficam mais legíveis se não encostarem umas nas outras. Para isso
