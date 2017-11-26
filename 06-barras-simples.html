@@ -54,8 +54,8 @@
           .enter()
               .append('rect')
               .attr('x', 0) // A função com dois parâmetros pode entrar
-              .attr('y', function(dado, indice) {indice * (altura/dados.length)}) // e aqui
-              .attr('width', function(dado, indice) { (dado * largura)/100})
+              .attr('y', function(dado, indice) {return indice * (altura/dados.length)}) // e aqui
+              .attr('width', function(dado, indice) {return (dado * largura)/100})
               .attr('height', ((altura/dados.length)-2));
 
       /* Mais dicas :
