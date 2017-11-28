@@ -68,7 +68,7 @@
 
         graphic.append("text")
             .text(function(d){return d.mes})
-            .attr("x", d.mes * 125 - 8);
+            .attr("x", function(d){d.mes * 125 - 8;})
             .attr("y", 250);
       // Preencha aqui.
     }
