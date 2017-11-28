@@ -43,22 +43,6 @@
             .attr('width', larguraSVG)
             .attr('height', alturaSVG)
 
-        // === EDITE DAQUI ===
-      /*
-       * As escalas
-       */
-        var cx = d3.scaleBand()
-            .domain([0,10])
-            .range([0,100]);
-
-        // Configure essa escala com domain, range e padding
-
-        var cy = d3.scaleLinear() // Configure essa escala com domain e range
-            .domain([0,100])
-            .range([0,100]);// Lembre que uma escala pode converter de 1..10 -> 100..1
-
-        // === ATÉ DAQUI ===
-
       /*
        * As marcas
        */
