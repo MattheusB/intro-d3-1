@@ -82,15 +82,16 @@
             .attr("r", function(d){return d.dez_percentil})
             .style("fill", "goldenrod")
 
-        grafico.append("text")
-            .attr("transform", "translate(-30," + (alturaVis + margin.top)/2 + ") rotate(-90)")
-            .text("Frequencia");
+        graphic.append("text")
+            .text(function(d){return d.mes})
+            .attr("x", d.mes * 125 - 8)
+            .attr("y", 250)
       // Preencha aqui.
     }
 
     d3.tsv('dados/alphabet.tsv', function(dados) {
       console.log("provavelmente acontece depois")
-      desenhaBarras(dados);
+      desenhaCirculos(dados);
     });
 
     console.log("provavelmente acontece primeiro") // me apague quando entender.
