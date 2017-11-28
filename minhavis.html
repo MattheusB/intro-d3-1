@@ -36,7 +36,7 @@
       /*
        * As marcas
        */
-          grafico.selectAll('g')
+    var graphic = grafico.selectAll('g')
             .data(dados)
             .enter()
             .append('g');
@@ -44,26 +44,26 @@
       /*
        * Os eixos
        */
-        grafico.append("circle")
-            .attr("cx", function(d) {return (d.mes) * 125})
+        graphic.append("circle")
+            .attr("cx", function(d) {return (d.mes) * 125;})
             .attr("cy", 250)
-            .attr("r", function(d) {return (d.noventa_percentil) * 0.6})
+            .attr("r", function(d) {return (d.noventa_percentil) * 0.6;})
             .style("fill", "steelblue");
 
-        grafico.append('circle')
-            .attr('cx', function(d){return (d.mes) * 125})
+        graphic.append('circle')
+            .attr('cx', function(d){return (d.mes) * 125;})
             .attr("cy", 250)
-            .attr("r", function(d){return d.dez_percentil})
+            .attr("r", function(d){return d.dez_percentil;})
             .style("fill", "goldenrod");
 
-        grafico.append("text")
+        graphic.append("text")
             .text(function(d){return d.mes;})
-            .attr("x", function(d){(d.mes) * 125 - 8})
+            .attr("x", function(d){return (d.mes) * 125 - 8;})
             .attr("y", 250);
       // Preencha aqui.
     }
 
-    d3.tsv('dados/boqueirao-por-mes.csv', function(dados) {
+    d3.csv('dados/boqueirao-por-mes.csv', function(dados) {
       console.log("provavelmente acontece depois")
       desenhaCirculos(dados);
     });
