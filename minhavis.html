@@ -36,7 +36,7 @@
       /*
        * As marcas
        */
-    var graphic = grafico.selectAll('g')
+          grafico.selectAll('g')
             .data(dados)
             .enter()
             .append('g');
@@ -44,19 +44,19 @@
       /*
        * Os eixos
        */
-        graphic.append("circle")
+        grafico.append("circle")
             .attr("cx", function(d) {return (d.mes) * 125;})
             .attr("cy", 250)
             .attr("r", function(d) {return (d.noventa_percentil) * 0.6;})
             .style("fill", "steelblue");
 
-        graphic.append('circle')
+        grafico.append('circle')
             .attr('cx', function(d){return (d.mes) * 125;})
             .attr("cy", 250)
             .attr("r", function(d){return d.dez_percentil;})
             .style("fill", "goldenrod");
 
-        graphic.append("text")
+        grafico.append("text")
             .text(function(d){return d.mes;})
             .attr("x", function(d){(d.mes) * 125 - 8;})
             .attr("y", 250);
