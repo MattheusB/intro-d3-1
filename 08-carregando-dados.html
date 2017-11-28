@@ -59,7 +59,7 @@
        */
         var x = d3.scaleBand()
             .domain(dados.map((dados, indice) => dados.letra))
-            .range([0,700])
+            .range([0,larguraVis])
             .paddingInner(0.2)
             .paddingOuter(0.3);
 
@@ -67,7 +67,7 @@
 
         var y = d3.scaleLinear() // Configure essa escala com domain e range
             .domain([0,0.15])
-            .range([300,0]);// Lembre que uma escala pode converter de 1..10 -> 100..1
+            .range([alturaVis,0]);// Lembre que uma escala pode converter de 1..10 -> 100..1
 
         // === ATÉ DAQUI ===
 
