@@ -22,45 +22,67 @@
 
 // definicoes de altura e largura do svg e da vis dentro
     var alturaSVG = 600, larguraSVG = 2000;
+    var margem = {top: 10, direita: 20, bottom: 30, esquerda:40},
+        larguraVis = larguraSVG - margem.esquerda - margem.direita,
+        alturaVis = alturaSVG - margem.top - margem.bottom;
 
     function desenhaCirculos(dados) {
 
       /*
        * Prepara onde adicionaremos a visualizacao
        */
-        var grafico = d3.select('#chart') // cria elemento <svg> com um <g> dentro
-            .append('svg')
-            .attr('width', larguraSVG)
-            .attr('height', alturaSVG);
+        var grafico = d3.select("#chart") // cria elemento <svg> com um <g> dentro
+            .append("svg")
+            .attr("width", larguraVis + margem.direita + margem.esquerda)
+            .attr("height", alturaVis + margem.top + margem.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margem.esquerda + "," + margem.top + ")");
+
+
+
+        var x = d3.scaleBand()
+            .domain(dados.map((dados, indice) => dados.mes))
+            .range([0, larguraVis]);
+        var y = d3.scaleLinear()
+            .domain([0, 100])
+            .range([alturaVis, 0]);
+
+
+
 
       /*
        * As marcas
        */
-    var graphic = grafico.selectAll('g')
+
+        grafico.selectAll('g')
             .data(dados)
             .enter()
-            .append('g');
+            .append('circle')
+            .attr("cx", d => x(d.mes) + 50)
+    .attr("cy", d => y(d.mediana))
+    .attr("cz", d => -1)
+    .attr("r", d => d.dez_percentil * 0.60)
+    .style("fill", "steelblue");
 
-      /*
-       * Os eixos
-       */
-        graphic.append("circle")
-            .attr("cx", function(d) {return (d.mes) * 125;})
-            .attr("cy", 250)
-            .attr("r", function(d) {return (d.noventa_percentil) * 0.6;})
-            .style("fill", "#e2bb0b");
+        grafico.selectAll("g")
+            .data(dados)
+            .enter()
+            .append("circle")
+            .attr("cx", d => x(d.mes) + 50)
+    .attr("cy", d => y(d.mediana))
+    .attr("r", d => d.noventa_percentil * 0.35)
+    .style("fill", "#e2bb0b");
 
-        graphic.append('circle')
-            .attr('cx', function(d){return (d.mes) * 125;})
-            .attr("cy", 250)
-            .attr("r", function(d){return d.dez_percentil;})
-            .style("fill", "steelblue");
 
-        graphic.append("text")
-            .text(function(d){return d.mes;})
-            .attr("x", function(d){return (d.mes) * 125 - 8;})
-            .attr("y", 250);
-      // Preencha aqui.
+
+        grafico.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + alturaVis + ")")
+            .call(d3.axisBottom(x));
+        grafico.append('g')
+            .attr("transform", "translate(0,0)")
+            .call(d3.axisLeft(y));
+
     }
 
     d3.csv('dados/boqueirao-por-mes.csv', function(dados) {
