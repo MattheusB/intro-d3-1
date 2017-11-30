@@ -21,7 +21,7 @@
     "use strict"
 
 // definicoes de altura e largura do svg e da vis dentro
-    var alturaSVG = 600, larguraSVG = 2000;
+    var alturaSVG = 350, larguraSVG = 900;
     var margem = {top: 10, direita: 20, bottom: 30, esquerda:40},
         larguraVis = larguraSVG - margem.esquerda - margem.direita,
         alturaVis = alturaSVG - margem.top - margem.bottom;
@@ -59,19 +59,19 @@
             .data(dados)
             .enter()
             .append("circle")
-            .attr("cx", d => x(d.mes) + 50)
+            .attr("cx", d => x(d.mes) + 40)
             .attr("cy", d => y(d.mediana))
             .attr("cz", d => -1)
-            .attr("r", d => d.dez_percentil * 0.60)
+            .attr("r", d => d.dez_percentil * 0.5)
             .style("fill", "steelblue");
 
         grafico.selectAll("g")
             .data(dados)
             .enter()
             .append("circle")
-            .attr("cx", d => x(d.mes) + 50)
+            .attr("cx", d => x(d.mes) + 40)
             .attr("cy", d => y(d.mediana))
-            .attr("r", d => d.noventa_percentil * 0.35)
+            .attr("r", d => d.noventa_percentil * 0.38)
             .style("fill", "#e2bb0b");
 
 
