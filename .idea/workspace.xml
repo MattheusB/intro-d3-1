@@ -17,8 +17,8 @@
       <file leaf-file-name="minhavis.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/minhavis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
+            <state relative-caret-position="300">
+              <caret line="76" column="32" lean-forward="false" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -513,12 +513,12 @@
       <workItem from="1511959208964" duration="435000" />
       <workItem from="1511994371088" duration="169000" />
       <workItem from="1511995633868" duration="95000" />
-      <workItem from="1511999310712" duration="3655000" />
+      <workItem from="1511999310712" duration="3734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10420000" />
+    <option name="totallyTimeSpent" value="10499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="62" width="1400" height="781" extended-state="0" />
@@ -682,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/minhavis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
+        <state relative-caret-position="300">
+          <caret line="76" column="32" lean-forward="false" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
           <folding />
         </state>
       </provider>

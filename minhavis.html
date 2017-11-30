@@ -55,26 +55,26 @@
        */
 
 
-        grafico.selectAll("g")
-            .data(dados)
-            .enter()
-            .append("circle")
-            .attr("cx", d => x(d.mes) + 40)
-            .attr("cy", d => y(d.mediana))
-            .attr("cz", d => -1)
-            .attr("r", d => d.dez_percentil * 0.5)
-            .style("fill", "steelblue");
+
 
         grafico.selectAll("g")
             .data(dados)
             .enter()
             .append("circle")
-            .attr("cx", d => x(d.mes) + 40)
+            .attr("cx", d => x(d.mes) + 50)
             .attr("cy", d => y(d.mediana))
-            .attr("r", d => d.noventa_percentil * 0.38)
+            .attr("r", d => d.noventa_percentil * 0.35)
             .style("fill", "#e2bb0b");
 
-
+        grafico.selectAll("g")
+            .data(dados)
+            .enter()
+            .append("circle")
+            .attr("cx", d => x(d.mes) + 50)
+    .attr("cy", d => y(d.mediana))
+    .attr("cz", d => -1)
+    .attr("r", d => d.dez_percentil * 0.6)
+    .style("fill", "steelblue");
 
 
 
