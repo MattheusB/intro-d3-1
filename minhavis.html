@@ -54,10 +54,11 @@
        * As marcas
        */
 
-        grafico.selectAll('g')
+
+        grafico.selectAll("g")
             .data(dados)
             .enter()
-            .append('circle')
+            .append("circle")
             .attr("cx", d => x(d.mes) + 50)
             .attr("cy", d => y(d.mediana))
             .attr("cz", d => -1)
@@ -75,6 +76,11 @@
 
 
 
+
+
+
+
+
         grafico.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + alturaVis + ")")
@@ -86,11 +92,10 @@
     }
 
     d3.csv('dados/boqueirao-por-mes.csv', function(dados) {
-      console.log("provavelmente acontece depois")
       desenhaCirculos(dados);
     });
 
-    console.log("provavelmente acontece primeiro") // me apague quando entender.
+
 
     /*
     * Assim como a função d3.tsv, existe a d3.csv e a d3.json
