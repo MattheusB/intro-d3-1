@@ -49,9 +49,9 @@
         .append("g")
         .attr("class", "graph")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    d3.tsv("data.tsv", type, function(error, data) {
-        x.domain(data.map(function(d) { return d.year; }));
-        y0.domain([0, d3.max(data, function(d) { return d.money; })]);
+    d3.csv("dados/dados.horario.csv", function(data) {
+        x.domain(data.map(function(d) { return d.horario_inicial; }));
+        y0.domain([0, d3.max(data, function(d) { return d.mulheres_ciclistas; })]);
 
         svg.append("g")
             .attr("class", "x axis")
@@ -93,8 +93,8 @@
             .attr("y", function(d) { return y1(d.homens_ciclistas); })
             .attr("height", function(d,i,j) { return height - y1(d.homens_ciclistas); });
     });
-    function type(d) {
+/*    function type(d) {
         d.money = +d.money;
         return d;
-    }
+    }*/
 </script>
