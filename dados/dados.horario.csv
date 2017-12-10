@@ -1,4 +1,4 @@
-horario_inicial,Carros,Motos,Ônibus,Caminhões,Mulheres ciclistas,Homens ciclistas,Mulheres pedestres,Homens pedestres
+horario_inicial,Carros,Motos,onibus,caminhoes,mulheres_ciclistas,homens_ciclistas,mulheres_pedestres,homens_pedestres
 06:00,51,48,1,0,0,29,92,94
 06:15,595,203,20,10,0,347,151,183
 06:30,587,356,13,8,9,77,157,162
