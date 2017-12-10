@@ -67,7 +67,7 @@
             .attr("dy", "-2em")
             .style("text-anchor", "end")
             .style("text-anchor", "end")
-            .text("Quantidade Ciclistas");
+            .text("Homens");
 
         svg.append("g")
             .attr("class", "y axis axisRight")
@@ -78,7 +78,7 @@
             .attr("dy", "-2em")
             .attr("dx", "2em")
             .style("text-anchor", "end")
-            .text("#");
+            .text("Mulheres");
         bars = svg.selectAll(".bar").data(data).enter();
         bars.append("rect")
             .attr("class", "bar1")
