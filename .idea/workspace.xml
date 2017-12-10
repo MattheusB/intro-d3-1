@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a0548a-5825-4bb5-8232-c9dd912337fc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab04.html" afterPath="$PROJECT_DIR$/lab04.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graficobarras.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lab04.html" afterPath="$PROJECT_DIR$/graficodinamico.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,18 +20,18 @@
       <file leaf-file-name="minhavis.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/minhavis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="-488">
               <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lab04.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab04.html">
+      <file leaf-file-name="graficodinamico.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graficodinamico.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+            <state relative-caret-position="23">
+              <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -39,8 +42,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="37" column="50" lean-forward="false" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+            <state relative-caret-position="138">
+              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graficobarras.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/graficobarras.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="96" column="16" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -74,6 +87,7 @@
         <option value="$PROJECT_DIR$/lab01.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/lab04.html" />
+        <option value="$PROJECT_DIR$/graficobarras.html" />
       </list>
     </option>
   </component>
@@ -547,12 +561,12 @@
       <workItem from="1511994371088" duration="169000" />
       <workItem from="1511995633868" duration="95000" />
       <workItem from="1511999310712" duration="4353000" />
-      <workItem from="1512940284445" duration="2110000" />
+      <workItem from="1512940284445" duration="3404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13228000" />
+    <option name="totallyTimeSpent" value="14522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="62" width="1400" height="781" extended-state="0" />
@@ -726,27 +740,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/minhavis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="-488">
           <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/graficodinamico.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="37" column="50" lean-forward="false" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+        <state relative-caret-position="138">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab04.html">
+    <entry file="file://$PROJECT_DIR$/graficobarras.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="525">
+          <caret line="96" column="16" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
