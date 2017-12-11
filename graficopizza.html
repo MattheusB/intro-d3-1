@@ -59,7 +59,7 @@
         .attr("class", "tooltip");
     var pie = d3.layout.pie()
         .sort(null)
-        .value(function(d){return d.population;})
+        .value(function(d){return d.quantidade;})
         .padAngle(.02);
     var g = svg.selectAll(".arc")
         .data(pie(data))
@@ -70,7 +70,7 @@
             var mouseVal = d3.mouse(this);
             div.style("display","none");
             div
-                .html("Age:"+d.data.age+"</br>"+"No. of Victims:"+d.data.population)
+                .html("Categoria:"+d.data.Categoria+"</br>"+"Quantidade:"+d.data.quantidade)
                 .style("left", (d3.event.pageX+12) + "px")
                 .style("top", (d3.event.pageY-10) + "px")
                 .style("opacity", 1)
