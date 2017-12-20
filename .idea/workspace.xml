@@ -37,8 +37,8 @@
       <file leaf-file-name="graficobarras.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graficobarras.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+            <state relative-caret-position="525">
+              <caret line="64" column="66" lean-forward="false" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -549,12 +549,12 @@
       <workItem from="1511995633868" duration="95000" />
       <workItem from="1511999310712" duration="4353000" />
       <workItem from="1512940284445" duration="6365000" />
-      <workItem from="1513733593114" duration="1962000" />
+      <workItem from="1513733593114" duration="2053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19445000" />
+    <option name="totallyTimeSpent" value="19536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="62" width="1400" height="781" extended-state="0" />
@@ -782,8 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graficobarras.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+        <state relative-caret-position="525">
+          <caret line="64" column="66" lean-forward="false" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
           <folding />
         </state>
       </provider>

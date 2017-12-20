@@ -5,7 +5,7 @@
         font: 10px sans-serif;
     }
     .y.axisRight text {
-        fill: #FF00FF;
+        fill: orange;
     }
     .y.axisLeft text {
         fill: steelblue;
@@ -20,7 +20,7 @@
         fill: steelblue;
     }
     .bar2 {
-        fill: #FF00FF;
+        fill: orange;
     }
     .x.axis path {
         display: none;
@@ -34,7 +34,7 @@
     é possível notar se há diferença significativa ou não entre o número de homens e o número de mulheres que passam no Açude Velho.
     A pesquisa foi feita pelo laboratório LabRua.
 
-    
+
 </p>
 
 
@@ -62,7 +62,7 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     d3.csv("dados/dados.horario.csv", function(data) {
         x.domain(data.map(function(d) { return d.horario_inicial; }));
-        y0.domain([0, d3.max(data, function(d) { return d.homens_ciclistas; })]);
+        y0.domain([0, d3.max(data, function(d) { return d.mulheres_ciclistas; })]);
 
         svg.append("g")
             .attr("class", "x axis")
