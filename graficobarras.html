@@ -51,7 +51,7 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     d3.csv("dados/dados.horario.csv", function(data) {
         x.domain(data.map(function(d) { return d.horario_inicial; }));
-        y0.domain([0, d3.max(data, function(d) { return d.mulheres_ciclistas; })]);
+        y0.domain([0, d3.max(data, function(d) { return d.homens_ciclistas; })]);
 
         svg.append("g")
             .attr("class", "x axis")
