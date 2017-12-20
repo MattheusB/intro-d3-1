@@ -14,7 +14,7 @@
     <script src="https://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
     <script src="https://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
     <script src="https://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
-    <script src="https://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
+    <script src="js/central-click.js"></script>
     <script src="https://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
     <style>
         .bubbleChart {
@@ -24,11 +24,11 @@
             margin: 0 auto;
         }
         .bubbleChart svg{
-            background: #000000;
+            background: white;
         }
     </style>
 </head>
-<body style="background: #000000">
+<body style="background: white">
 <div class="bubbleChart"/>
 
 <script>
@@ -58,7 +58,7 @@
                 {
                     name: "central-click",
                     options: {
-                        text: "(See more detail)",
+                        text: "(veja mais detalhes)",
                         style: {
                             "font-size": "12px",
                             "font-style": "italic",
