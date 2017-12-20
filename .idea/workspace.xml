@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a0548a-5825-4bb5-8232-c9dd912337fc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graficobarras.html" afterPath="$PROJECT_DIR$/graficobarras.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graficodinamico.html" afterPath="$PROJECT_DIR$/graficodinamico.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +14,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="graficodinamico.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="graficodinamico.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graficodinamico.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="398">
+              <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -35,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graficobarras.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graficobarras.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graficobarras.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -74,8 +73,8 @@
         <option value="$PROJECT_DIR$/lab04.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/graficopizza.html" />
-        <option value="$PROJECT_DIR$/graficodinamico.html" />
         <option value="$PROJECT_DIR$/graficobarras.html" />
+        <option value="$PROJECT_DIR$/graficodinamico.html" />
       </list>
     </option>
   </component>
@@ -550,12 +549,12 @@
       <workItem from="1511995633868" duration="95000" />
       <workItem from="1511999310712" duration="4353000" />
       <workItem from="1512940284445" duration="6365000" />
-      <workItem from="1513733593114" duration="1225000" />
+      <workItem from="1513733593114" duration="1361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18708000" />
+    <option name="totallyTimeSpent" value="18844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="62" width="1400" height="781" extended-state="0" />
@@ -765,14 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graficodinamico.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graficopizza.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -785,6 +776,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="53" column="64" lean-forward="false" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graficodinamico.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
           <folding />
         </state>
       </provider>

@@ -35,7 +35,11 @@
 <p> O gráfico abaixo é chamado de "Bubble Chart" que tem o como principal objetivo mostrar a quantidade de pessoas que
     passam em média por dia em 3 pontos do Açude Velho localizado na cidade de
     Campina Grande. Cada círculo significa um ponto analisado e o número dentro do círculo significa o número de pessoas que
-    passaram nesse determinado ponto, sendo elas motoristas, ciclistas e pedestres. A pesquisa foi feita pelo laboratório LabRua.</p>
+    passaram nesse determinado ponto, sendo elas motoristas, ciclistas e pedestres. A pesquisa foi feita pelo laboratório LabRua.
+
+
+    Obs: Clicando em "veja mais detalhes" mostrará uma pequena mensagem.
+</p>
 <script>
     $(document).ready(function () {
         var bubbleChart = new d3.svg.BubbleChart({
@@ -70,7 +74,7 @@
                             "font-family": "Source Sans Pro, sans-serif",
                             //"font-weight": "700",
                             "text-anchor": "middle",
-                            "fill": "white"
+                            "fill": "black"
                         },
                         attr: {dy: "65px"},
                         centralClick: function() {
